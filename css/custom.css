@@ -1,0 +1,199 @@
+ body {
+  background: #F7F9FB
+}
+
+.page-header {
+  height: 70px;
+  background: #F7F9FB;
+  border-top: 1px solid #9AA1A5;
+  border-bottom : 1px solid #BBBDBE;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+
+.page-header img {
+   max-width: 150%;
+}
+
+#contrImages {
+  display: inline;
+}
+
+.selectImage {
+  max-width: 200px;
+  margin-left: 20px;
+}
+
+.selectImage:hover {
+  border: 2px solid #091A23;
+}
+
+#selectImages {
+  margin-top: 100px;
+}
+
+.selectedImage {
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all ease 1s;
+}
+
+.largeImg {
+  width: 45px;
+  margin-top: -12px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #F7F9FB;
+}
+
+.blueBG {
+  background: #091A23;
+  color: #F7F9FB; 
+}
+
+#search_button {
+  width: 50px;
+}
+
+.right_col {
+  padding: 0;  
+}
+
+.results_section {
+  background: #F7F9FB;
+  height: 447px;
+  padding: 0;
+  text-align: center;
+}
+
+#preloader, #errrorMsg {
+  margin-top: 12%;
+  display: none;
+}
+
+#errrorMsg {
+  display: block;
+  margin-top: 15%;
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  padding: 10px auto;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+.leaderboard_text {
+height: 60px;
+background: #091A23;
+width: 99.9%;
+color: #F7F9FB;
+}
+
+ .left_col, .right_col {
+  height: 570px;
+ }
+
+ .left_col {
+  background: #091A23;
+  border-top: 2px solid #fff;
+  overflow: scroll;
+ }
+
+ .left_col h4 {
+  margin: 25px auto;
+  color: #F7F9FB;
+ }
+
+ .right_col {
+  background: #EAF0F3;
+ }
+
+
+#listOfProjects li{
+  cursor: default;
+}
+
+#listOfProjects li:hover {
+  background: #091A23;
+  color: #F7F9FB;
+}
+
+#listOfProjects li:visited {
+  background: #ff0; 
+}
+
+ /* Chart style*/
+.graph-header {
+  background: #091A23;
+  text-align: center;
+  color: #F7F9FB; 
+  height: 45px;
+}
+
+.graph-header h2 {
+  margin-top: 3px;
+}
+
+ #chartHolder {
+  width: 900px;
+  height: 600px;
+ }
+
+ @media (min-width: 768px)  {
+    .page-header img {
+       /*width: 60px;*/
+       margin: 5px -100px;
+    }
+
+    #search_button {
+      width: 70px;
+    }
+
+    #searchForm {
+      float: right;
+      margin: 1.3% -90px;
+    }
+
+ }
+
+
+  @media (min-width: 320px) and (max-width: 768px)  {
+    .page-header img {
+      max-width: 100%;
+      margin-top: 3px;
+    }
+
+    #search_button {
+      width: 50px;
+      z-index: 1;
+    }
+
+    #searchForm {
+      float: right;
+      margin: 1.3% -30px;
+    }
+  }
+
+@media (max-width: 480px){
+  .left_col {
+    margin-top: 60px;
+  }
+
+  #searchForm {
+    float: none;
+    margin: 5% -30px;
+  }
+
+  .largeImg {
+    margin-right: 12px;
+  }
+  
+}
+  
+
+
+
+ 
