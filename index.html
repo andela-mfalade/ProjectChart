@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Project Chart</title>
+   <link rel="stylesheet" type="text/css" href="css/bootstrapp/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrapp/fonts/glyphicons-halflings-regular.svg">
+   <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+
+  <body>
+
+    <div class="page-header">
+      <div  class="container">
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="col-lg-2">
+
+                <img src="images/github2.png" class="img-responsive">
+              </div>
+              <div class="col-lg-2 col-md-12"></div>
+                    
+              <div id="searchForm" class="col-lg-4 col-md-8 col-sm-12">
+                
+                <div class="input-group form-group">
+                  <input type="text" class="form-control" placeholder="Search for Organization" id="search_form">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button" id="search_button">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      </button>
+                    </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+       </div><!-- container--> 
+    </div><!-- Page Header--> 
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+
+<!-- Left Col -->
+          <div class="col-md-2 left_col">
+            <h4 class="glyphicon glyphicon-home"><span id="companyName"></span> projects</h4>
+            <ul id="listOfProjects" class="list-group">              
+            </ul>
+          </div>
+
+<!-- Right col -->
+          <div class="col-md-10 right_col">
+              <div class="page-header graph-header">
+                <h2 id="project_title">Project</h2>
+              </div>
+              <div class="row"> 
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 results_section" id="results_section">
+                  <div id="canvasSection"></div>
+                <div id="sub_canvas">
+                  <h2>Select result style.</h2>
+                  <div id="selectImages" class="row">
+                    <img src="images/graph.png" class="selectImage img-responsive col-lg-3 col-xs-2" alt="bar">
+                    <img src="images/pie_chart.png" class="selectImage img-responsive col-xs-2" alt="pie">
+                    <img src="images/line.png" class="selectImage img-responsive col-xs-2" alt="line">
+                    <img src="images/area.png" class="selectImage img-responsive col-xs-2" alt="area">
+                  </div>
+                </div>
+                  <img src="images/500.gif" id="preloader" class="img-responsive">
+                  <h1 id="errrorMsg"></h1>               
+                </div> 
+                <div class="col-lg-1"></div>
+              </div> 
+            <div class="col-lg-12 leaderboard_text">
+                <div class="container-fluid">
+                <div class="row" id="contrImages">
+                  <div class="col-lg-2">
+                  </div>
+                  <div class="col-lg-2">
+                    <img src="images/github.jpg" class="img-responsive img-circle img-thumbnail largeImg col-xs-2" id="newBar" alt="bar"> 
+                  </div>
+                  <div class="col-lg-2">
+                    <img src="images/github.jpg" class="img-responsive img-circle img-thumbnail largeImg col-xs-2" id="newPie" alt="pie">               
+                  </div>
+                  <div class="col-lg-2">
+                    <img src="images/github.jpg" class="img-responsive img-circle img-thumbnail largeImg col-xs-2" id="newLine" alt="line">                   
+                  </div>
+                  <div class="col-lg-2">
+                    <img src="images/github.jpg" class="img-responsive img-circle img-thumbnail largeImg col-xs-2" id="newArea" alt="area">                              
+                  </div>
+                  <div class="col-lg-2"></div>                  
+                </div> 
+                </div>            
+            </div>
+          </div>
+            
+
+        </div>
+      </div>
+    </div>
+
+     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="js/app.js"></script>
+     <script type="text/javascript" src="js/test.js"></script>
+     <script type="text/javascript" src="canvasjs/canvasjs.min.js"></script>
+
+  </body>
+  </html>
