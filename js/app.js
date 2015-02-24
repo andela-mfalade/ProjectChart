@@ -79,10 +79,10 @@ var ProjectTree = {
    },
 
     generateGraphData: function(object) {      
-      for (i in object) {
+      for (var i in object) {
         var dataPointsObject = {};
-        dataPointsObject['label'] = i;
-        dataPointsObject['y'] = object[i];
+        dataPointsObject.label = i;
+        dataPointsObject.y = object[i];
         ProjectTree.dataPoints.push(dataPointsObject);
       }
       ProjectTree.plotGraph(ProjectTree.dataPoints);
@@ -97,7 +97,6 @@ var ProjectTree = {
           },
           data: [             
             {
-              /*** Change type "column" to "bar", "area", "line" or "pie"***/
              type: ProjectTree.defaultGraphStyle,
              dataPoints: newArray
             }
@@ -168,6 +167,6 @@ var ProjectTree = {
       });
     }
 
-}
+};
 
 $(document).ready(ProjectTree.init);
