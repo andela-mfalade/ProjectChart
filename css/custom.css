@@ -148,6 +148,18 @@ color: #F7F9FB;
        margin: 5px -100px;
     }
 
+    #pieHolder {
+      margin-top: 60px;
+    }
+
+    #areaHolder {
+      margin-top: 20px;
+    }
+
+    #barHolder {
+      margin-top: 20px;
+    }
+
     #search_button {
       width: 70px;
     }
